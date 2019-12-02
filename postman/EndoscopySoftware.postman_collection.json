@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "98b234f4-b351-4367-9b97-677e45561353",
+		"name": "EndoscopySoftware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "loadVideo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/load?address=resources\\SampleVideo_720x480_1mb.mp4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"load"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "resources\\SampleVideo_720x480_1mb.mp4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
