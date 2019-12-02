@@ -9,10 +9,13 @@ import { bgCards, gradientCards, overlayCards } from '../demos/cardPage';
 import { getStackLineChart, stackLineChartOptions } from '../demos/chartjs';
 import React from 'react';
 import { Line } from 'react-chartjs-2';
+import { FilePond } from 'react-filepond';
+import '../styles/filepond.min.css';
 import {
   Button,
   Card,
   CardBody,
+  CardHeader,
   CardImg,
   CardImgOverlay,
   CardLink,
@@ -28,8 +31,16 @@ const CardPage = () => {
   return (
     <Page title="Analysis" breadcrumbs={[{ name: 'analysis', active: true }]}>
       <Row>
+      <Col>
+        <Card>
+         <CardHeader>Please select your file</CardHeader>
 
+             <CardBody>
+                 <FilePond/>
+            </CardBody>
+        </Card>
 
+        </Col>
       </Row>
     </Page>
   );
